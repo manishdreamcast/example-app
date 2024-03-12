@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return 'worked';
 });
-require __DIR__.'/web/v1/web_routes.php';
+
