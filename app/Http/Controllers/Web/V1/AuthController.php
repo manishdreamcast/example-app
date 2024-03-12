@@ -69,12 +69,18 @@ class AuthController extends Controller
                 'country_code'=>'required|max:10',
                 'phone'=>'required|max:20',
                 'company'=>'required|max:10',
-                'country_code'=>'required|max:10',
+                'company_address'=>'required',
+                'industrial_type'=>'required',
             ];
             
             $messages = [
                 'email.required' => 'Please provide your email address.',
                 'email.email' => 'Please provide a valid email address.',
+                'country_code.required' => 'Select Country',
+                'phone.required' => 'Please provide a phone number.',
+                'company.required' => 'Please provide a company name',
+                'company_address.required' => 'Please provide a company name',
+                'industrial_type.required' => 'Please provide industrial type',
                 'first_name.required' => 'Please enter your first name.',
                 'last_name.required' => 'Please enter your last name.',
                 'first_name.max' => 'The first name should not exceed 50 characters.',
